@@ -56,3 +56,23 @@ footer {
   /* width: 100%; */
   /* height: 2.5rem;   */
 }
+
+.bottomPage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company a, .category a {
+    text-decoration: none;
+}
+
+.company, .category{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.follow img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+}
