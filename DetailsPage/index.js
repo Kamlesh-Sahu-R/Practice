@@ -3,10 +3,10 @@ const whatsapp_number = document.getElementById("whatsApp-hide2");
 // console.log(whatsapp);
 // console.log(whatsapp_number);
 
-whatsapp_number.style.display = "none";
+// whatsapp_number.style.display = "none";
 
 whatsapp.addEventListener('mouseover', function(event){
-   
+    event.stopPropagation();
     event.preventDefault();
     whatsapp_number.style.display = "block";
     // whatsapp.style.display = "none";
