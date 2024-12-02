@@ -7,7 +7,7 @@ whatsapp_number.style.display = "none";
 
 whatsapp.addEventListener('mouseover', function(event){
    
-    event.stopPropagation();
+    event.preventDefault();
     whatsapp_number.style.display = "block";
     // whatsapp.style.display = "none";
     
