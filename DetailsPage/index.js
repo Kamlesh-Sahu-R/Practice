@@ -6,6 +6,7 @@ console.log(whatsapp_number);
 whatsapp.addEventListener('mouseover', function(event){
    
     event.stopImmediatePropagation();
+    event.defaultPrevented();
     whatsapp_number.style.display = "block";
     whatsapp.style.display = "none";
     
