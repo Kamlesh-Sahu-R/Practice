@@ -8,8 +8,8 @@ whatsapp.addEventListener('mouseover', function(event){
     
     whatsapp_number.style.display = "block";
     whatsapp.style.display = "none";
-    event.stopImmediatePropagation();
-    event.defaultPrevented();
+    // event.stopImmediatePropagation();
+    // event.defaultPrevented();
     
    
 });
