@@ -9,14 +9,14 @@ whatsapp.addEventListener('mouseover', function(event){
    
     event.stopPropagation();
     whatsapp_number.style.display = "block";
-    whatsapp.style.display = "none";
+    // whatsapp.style.display = "none";
     
    
 });
 whatsapp.addEventListener('mouseout', () => {
     
     whatsapp_number.style.display = "none";
-    whatsapp.style.display = "block";
-    console.log(whatsapp);
-    console.log(whatsapp_number);
+    // whatsapp.style.display = "block";
+    // console.log(whatsapp);
+    // console.log(whatsapp_number);
 });
