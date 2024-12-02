@@ -5,9 +5,10 @@ console.log(whatsapp_number);
 
 whatsapp.addEventListener('mouseover', function(event){
    
-   event.preventDefault();
+   
     whatsapp_number.style.display = "block";
     whatsapp.style.display = "none";
+    event.preventDefault();
     
    
 });
