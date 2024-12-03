@@ -37,19 +37,30 @@ body{
     <script>
         let video = document.querySelector("#videoElement");
 
-        if (navigator.mediaDevices.getUserMedia) {
-
-            console.log(navigator.mediaDevices.getUserMedia);
-            navigator.mediaDevices.getUserMedia({ video: true, audio: true })
-                .then(function (stream) {
-                    video.srcObject = stream;
-                })
-                .catch (function (error) {
-                    console. log("Something went wrong!");
-                })
-        }else {
-            console. log("getUserMedia not supported!");
+        async function startWebCam() {
+            
+            try{
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                video.srcObject = stream;
+                window.stream = stream;
+            }catch(e){
+                console.log(e.toString());
+            }
         }
+
+        // if (navigator.mediaDevices.getUserMedia) {
+
+        //     //console.log(navigator.mediaDevices.getUserMedia);
+        //     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+        //         .then(function (stream) {
+        //             video.srcObject = stream;
+        //         })
+        //         .catch (function (error) {
+        //             console. log("Something went wrong!");
+        //         })
+        // }else {
+        //     console. log("getUserMedia not supported!");
+        // }
     </script>
 
 </body>
