@@ -36,13 +36,14 @@ body{
 	
     <script>
         let video = document.querySelector("#videoElement");
+        startWebCam()
 
         async function startWebCam() {
             
             try{
                 const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
                 video.srcObject = stream;
-                window.stream = stream;
+                //window.stream = stream;
             }catch(e){
                 console.log(e.toString());
             }
